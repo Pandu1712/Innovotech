@@ -29,7 +29,7 @@ like never before`,
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948314/Picture8_ikcloe.png",
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948320/Picture5_ornmnq.png",
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948321/Picture2_qr4mef.jpg"
-         
+
         ],
         specifications: [
           'Control Panel ',
@@ -168,7 +168,7 @@ never obsolete, providing the perfect blend of contemporary style and long-term 
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948298/Picture32_mfi35w.png",
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948301/Picture27_ws4hzo.jpg",
           "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948300/Picture28_mgb5vg.png",
-          
+
         ],
         specifications: [
           'Dimming: Smooth brightness control (0-100%)',
@@ -233,88 +233,7 @@ scale and style of any room
 
     ]
   },
-  {
-    id: 'smart-curtains',
-    name: 'Smart Curtains',
-    category: 'automation',
-    description: `Orchestrate the light in your home, from sunrise to sunset.
-Our Smart Curtains sync perfectly with the rhythm of your
-day. Schedule them to open gently, welcoming the morning
-sun. Have them automatically adjust to block harsh glare,
-saving energy. As evening arrives, they'll close to provide
-complete privacy and create a warm, inviting atmosphere.
-With intuitive control through the Pert App and voice
-commands, managing your home's light and privacy has
-never been more convenient or graceful.`,
-    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture43_peqfhs.png',
-    features: [
-      'Whisper Quiet Motor',
-      'App & Voice Control',
-      'Sunrise/Sunset Automation',
-      'Remote Operation',
-      'Easy Installation',
-      'Battery Backup'
-    ],
-    categories: [
-      {
-        id: 'American Curtains',
-        name: 'American Curtains',
-        description: `Take complete command of your environment
-with our advanced curtain motor. Beyond its
-silent and smooth operation, this system offers
-unparalleled control. Manage individual curtains
-or entire groups simultaneously through our user
-friendly app. For the ultimate smart home, the dry
-contact feature allows for seamless integration
-with external automation systems. Combined with
-built-in obstacle detection for safety, it's the
-powerful, intelligent heart of your smart window
-treatments, available for both American and
-Ripple curtains`,
-        images: [
-          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture43_peqfhs.png',
-          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948285/Picture42_o5x40b.png",
-        ],
-        specifications: [
-          'Noise Level: <35dB',
-          'Max Load: 50kg',
-          'Track Length: Up to 6M',
-          'Speed: Adjustable',
-          'Power: AC adapter or battery'
-        ]
-      },
-      {
-        id: 'Curtains Blinds',
-        name: 'Curtain Blinds',
-        description: `Your home, your light, your rules.
-Experience unparalleled control over your
-environment with our smart shades. Use a
-classic wall switch, a handy remote, or our
-powerful smartphone app to adjust your
-home's light and privacy from anywhere,
-anytime. For ultimate convenience, create
-pre-set schedules or integrate them into
-your existing smart home system. Enjoy
-whisper-quiet, smooth operation and a
-durable, stylish design that enhances any
-room while improving energy efficiency.
-
-`,
-        images: [
-          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture44_iqwpp7.png',
-          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture45_yi2zls.png'
-        ],
-        specifications: [
-          'Noise Level: <35dB',
-          'Max Load: 50kg',
-          'Track Length: Up to 6M',
-          'Speed: Adjustable',
-          'Power: AC adapter or battery'
-        ]
-      },
-
-    ]
-  },
+ 
   {
     id: 'smart-security',
     name: 'Smart Security',
@@ -540,5 +459,287 @@ various indoor environments.`,
         ]
       }
     ]
-  }
+
+
+    
+  },
+
+
+
+
+
+  {
+id: 'Smart Tables',
+  name: 'Smart Tables',
+  category: 'automation',
+  description: `Transform the way you work, dine, and relax with our
+Smart Tables. Designed to adapt intelligently to your
+lifestyle, these tables offer smart height adjustment,
+integrated power solutions, and seamless automation.
+Whether at home, office, or commercial spaces, Smart
+Tables enhance comfort, productivity, and elegance.
+Control everything effortlessly using the Pert App
+or voice commands for a truly modern experience.`,
+  image: 'https://m.media-amazon.com/images/I/81pXqxDGDIL.jpg',
+  features: [
+    'Smart Height Adjustment',
+    'App & Voice Control',
+    'Wireless Charging Surface',
+    'Touch Control Panel',
+    'Smooth & Silent Operation',
+    'Built-in Power Backup',
+    'Smart Home Integration'
+  ],
+  categories: [
+    {
+      id: 'Smart Office Table',
+      name: 'Smart Office Table',
+      description: `This advanced Smart Office Table is engineered for
+modern homes and professional workspaces. It offers
+intelligent height adjustment, built-in wireless charging,
+and smart surface controls for enhanced productivity.
+Users can control individual table functions or manage
+multiple tables together using a simple mobile app.
+With automation compatibility and built-in safety
+mechanisms, it delivers reliable performance with a
+sleek, premium finish.`,
+      images: [
+        'https://media.landmarkshops.in/cdn-cgi/image/h=550,w=550,q=85,fit=cover/homecentre/1000014628238-1000014628237_01-2100.jpg',
+        "https://m.media-amazon.com/images/I/71eMIgixSVL._AC_UF894,1000_QL80_.jpg"
+      ],
+      specifications: [
+        'Noise Level: <35dB',
+        'Max Load Capacity: 80kg',
+        'Height Adjustment Range: Customizable',
+        'Control Options: App, Touch, Voice',
+        'Power Supply: AC adapter or battery'
+      ]
+    },
+    {
+      id: 'Smart Dining Table',
+      name: 'Smart Dining Table',
+      description: `Designed for flexibility and everyday comfort,
+this Smart Dining Table adapts effortlessly to various
+activities such as dining, working, or entertaining.
+Adjust table height, activate integrated charging, or
+control ambient lighting using a remote or mobile app.
+Create preset modes for different occasions and integrate
+seamlessly with your smart home system. Its durable build,
+silent operation, and elegant design enhance any space.`,
+      images: [
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJucFJkn5xmqdlpP6Dc9tfmtNU_980nooQlQ&s',
+        "https://i.pinimg.com/736x/22/ff/0e/22ff0ec5759a688f0a025d7b71fd39f4.jpg"
+      ],
+      specifications: [
+        'Noise Level: <35dB',
+        'Max Load Capacity: 80kg',
+        'Height Adjustment: Smooth & Silent',
+        'Preset Modes: Dining, Work, Relax',
+        'Power Supply: AC adapter or battery'
+      ]
+    },
+    {
+      id: 'Smart Coffee Table',
+      name: 'Smart Coffee Table',
+      description: `Perfect for modern living rooms, the Smart Coffee
+Table combines elegance with intelligent functionality.
+Featuring wireless charging, touch controls, and smart
+storage options, it enhances convenience during daily
+use or social gatherings. Control lighting and charging
+features via app or touch panel for a seamless experience.
+Its compact design and premium materials make it both
+functional and stylish.`,
+      images: [
+        'https://www.realestate.com.au/news-image/w_462,h_627/v1660073318/news-lifestyle-content-assets/wp-content/production/7-e1567662558711.jpg?_i=AA',
+        "https://m.media-amazon.com/images/I/81abkDFcRLL.jpg",
+        "https://thegreytechnologies.com/cdn/shop/products/smart-coffee-table-5_2000x.jpg?v=1612197451"
+      ],
+      specifications: [
+        'Noise Level: <30dB',
+        'Max Load Capacity: 60kg',
+        'Wireless Charging: Supported',
+        'Control Options: Touch & App',
+        'Power Supply: AC adapter'
+      ]
+    },
+    {
+      id: 'Smart Conference Table',
+      name: 'Smart Conference Table',
+      description: `Built for corporate and commercial environments,
+the Smart Conference Table delivers advanced technology
+for seamless meetings and collaboration. It includes
+integrated power outlets, wireless charging, cable
+management, and smart automation controls. Manage
+lighting, power, and table functions centrally through
+an app or automation system. Its robust construction
+and premium finish make it ideal for boardrooms.`,
+      images: [
+        'https://5.imimg.com/data5/SELLER/Default/2021/6/EZ/YN/SL/21996195/smart-conference-table.png',
+        "https://gesab.com/wp-content/uploads/2016/09/noticia-salas-reunion.jpg",
+        "https://vibeus-cdn.vibe.pub/blog/LMHXWIT7cyeWKsRamo4bHddPYpsJz4jD.png"
+      ],
+      specifications: [
+        'Noise Level: <40dB',
+        'Max Load Capacity: 120kg',
+        'Integrated Power & Data Ports',
+        'Centralized App Control',
+        'Power Supply: AC adapter'
+      ]
+    }
+  ]
+},
+
+
+
+
+{
+
+
+  
+  id: 'Automatic Gates',
+  name: 'Automatic Gates',
+  category: 'automation',
+  description: `Enhance security, convenience, and style with our
+Automatic Gate solutions. Designed for residential,
+commercial, and industrial use, these gates provide
+smooth, reliable, and intelligent access control.
+Schedule opening and closing, manage entry remotely,
+and integrate seamlessly with your smart home or
+security system. With app and voice control, managing
+your property access has never been more secure
+or effortless.`,
+  image: 'https://gategurus.com.au/wp-content/uploads/2023/08/automatic-sliding-gate-bg-1.jpg',
+  features: [
+    'Heavy-Duty Motor System',
+    'App & Voice Control',
+    'Remote Access Operation',
+    'Obstacle Detection Safety',
+    'Weather Resistant Design',
+    'Battery Backup Support'
+  ],
+  categories: [
+    {
+      id: 'Automatic Sliding Gates',
+      name: 'Automatic Sliding Gates',
+      description: `Automatic Sliding Gates are ideal for properties
+with limited space and high security requirements.
+Powered by a robust motor, they offer smooth and
+silent horizontal movement with precise control.
+Operate individual gates or multiple access points
+using a mobile app, remote, or access control system.
+With obstacle detection and smart automation support,
+they deliver reliable performance with enhanced safety
+and a modern, professional appearance.`,
+      images: [
+        'https://cpimg.tistatic.com/5423755/b/4/automatic-sliding-gates.jpg',
+        'https://5.imimg.com/data5/SELLER/Default/2023/7/327768121/DI/MQ/AW/22592413/automatic-gate-system.jpg'
+      ],
+      specifications: [
+        'Noise Level: <40dB',
+        'Max Gate Weight: 800kg',
+        'Gate Length Support: Up to 8M',
+        'Opening Speed: Adjustable',
+        'Power Supply: AC adapter or battery'
+      ]
+    },
+    {
+      id: 'Automatic Swing Gates',
+      name: 'Automatic Swing Gates',
+      description: `Automatic Swing Gates are designed for elegance
+and convenience in residential and commercial spaces.
+These gates open smoothly inward or outward using
+powerful actuators and smart control systems.
+Operate via remote, wall switch, or mobile app, and
+schedule automatic opening times for added comfort.
+With silent operation, durable construction, and
+smart safety features, they combine security with
+aesthetic appeal.`,
+      images: [
+        'https://livfuture.com/wp-content/uploads/2023/12/Swing-gate-1-1.webp',
+        'https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/20220912065350-d74c9157-14f2-41de-8b5e-472630e27762.jpg'
+      ],
+      specifications: [
+        'Noise Level: <40dB',
+        'Max Gate Weight: 500kg per leaf',
+        'Opening Angle: Up to 120°',
+        'Operation Mode: Smooth & Silent',
+        'Power Supply: AC adapter or battery'
+      ]
+    }
+  ]
+},
+
+
+
+{
+  id: 'Rolling Shutter Motor',
+  name: 'Rolling Shutter Motor',
+  category: 'automation',
+  description: `Secure and automate your spaces with our Rolling
+Shutter Motor solutions. Designed for residential,
+commercial, and industrial applications, these motors
+deliver powerful, smooth, and reliable shutter operation.
+Automate opening and closing schedules, control remotely,
+and integrate effortlessly with your smart home or
+security system. With app and voice control support,
+managing shutters has never been more efficient,
+secure, or convenient.`,
+  image: 'https://5.imimg.com/data5/GLADMIN/Default/2022/7/MU/BK/GM/86648/rolling-shutter-motor-500x500.jpg',
+  features: [
+    'Heavy-Duty Motor Performance',
+    'App & Voice Control',
+    'Remote & Switch Operation',
+    'Built-in Safety Brake',
+    'Thermal Overload Protection',
+    'Battery Backup Support'
+  ],
+  categories: [
+    {
+      id: 'Residential Rolling Shutter Motor',
+      name: 'Residential Rolling Shutter Motor',
+      description: `Designed for homes and small commercial spaces,
+this Residential Rolling Shutter Motor ensures smooth,
+quiet, and efficient shutter movement. It supports
+remote control, wall switch operation, and smart app
+integration for everyday convenience. With built-in
+safety protection and compact design, it provides
+reliable performance while maintaining a clean,
+aesthetic appearance.`,
+      images: [
+        'https://fpimages.withfloats.com/actual/664db154292f8dc7a920df3a.jpeg'
+      ],
+      specifications: [
+        'Noise Level: <40dB',
+        'Max Load Capacity: 300kg',
+        'Shutter Height Support: Up to 4M',
+        'Operation Speed: Adjustable',
+        'Power Supply: AC adapter or battery'
+      ]
+    },
+    {
+      id: 'Industrial Rolling Shutter Motor',
+      name: 'Industrial Rolling Shutter Motor',
+      description: `Built for heavy-duty commercial and industrial
+applications, this Industrial Rolling Shutter Motor
+delivers high torque and long-lasting durability.
+It supports large shutters with smooth and stable
+operation under continuous usage. Control shutters
+via remote, control panel, or automation system,
+and benefit from advanced safety features such as
+overload protection and emergency manual operation.`,
+      images: [
+        'https://5.imimg.com/data5/SELLER/Default/2023/6/317112270/MG/HR/MJ/23158049/rolling-shutter-motor-500x500.jpg'
+      ],
+      specifications: [
+        'Noise Level: <45dB',
+        'Max Load Capacity: 800kg',
+        'Shutter Height Support: Up to 8M',
+        'Duty Cycle: Continuous Operation',
+        'Power Supply: AC adapter with backup'
+      ]
+    }
+  ]
+},
+
+
 ];

@@ -1,13 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Zap, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, FileText } from "lucide-react";
 import { products } from "../data/products";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -28,15 +27,9 @@ export default function Header() {
     { name: "Contact", path: "/contact" },
   ];
 
-  const openDropdown = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setShowProducts(true);
-  };
-
-  const closeDropdown = () => {
-    timeoutRef.current = setTimeout(() => {
-      setShowProducts(false);
-    }, 120);
+  const openCatalog = () => {
+    window.open("/Catalog.pdf", "_blank");
+    setIsOpen(false);
   };
 
   return (
@@ -51,22 +44,13 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
 
           {/* LOGO */}
-        <Link to="/Logo.jpg" className="flex items-center group">
-  <img
-    src="/Logo.jpg"  // 🔴 MUST be transparent PNG or SVG
-    alt="SmartHome"
-    className="
-      h-11 w-auto
-      object-contain
-      transition-transform duration-300
-      group-hover:scale-105
-      rounded-lg
-    "
-    loading="eager"
-  />
-</Link>
-
-
+          <Link to="/" className="flex items-center gap-3 group">
+            <img
+              src="/Logo.jpg"
+              alt="SmartHome Logo"
+              className="h-48 w-48 object-contain transition-transform duration-300 group-hover:scale-105 rounded-lg"
+            />
+          </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-1">
@@ -87,16 +71,10 @@ export default function Header() {
             {/* PRODUCTS DROPDOWN */}
             <div
               className="relative"
-              onMouseEnter={openDropdown}
-              onMouseLeave={closeDropdown}
+              onMouseEnter={() => setShowProducts(true)}
+              onMouseLeave={() => setShowProducts(false)}
             >
-              <button
-                className={`flex items-center gap-1 px-4 py-2 rounded-lg font-medium transition ${
-                  location.pathname.startsWith("/product")
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                }`}
-              >
+              <button className="flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
                 Products
                 <ChevronDown
                   className={`w-4 h-4 transition-transform ${
@@ -105,11 +83,10 @@ export default function Header() {
                 />
               </button>
 
-              {/* DROPDOWN PANEL */}
               <div
                 className={`absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden transition-all duration-200 ${
                   showProducts
-                    ? "opacity-100 translate-y-0 pointer-events-auto"
+                    ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-2 pointer-events-none"
                 }`}
               >
@@ -117,22 +94,29 @@ export default function Header() {
                   <Link
                     key={product.id}
                     to={`/product/${product.id}`}
-                    className="flex items-center gap-4 px-5 py-4 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition group"
+                    className="flex items-center gap-4 px-5 py-4 hover:bg-blue-50"
                   >
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center group-hover:scale-110 transition">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-7 h-7 object-cover rounded"
-                      />
-                    </div>
-                    <span className="font-medium text-gray-700 group-hover:text-blue-600">
+                    <img
+                      src={product.image}
+                      className="w-8 h-8 rounded"
+                      alt={product.name}
+                    />
+                    <span className="font-medium text-gray-700">
                       {product.name}
                     </span>
                   </Link>
                 ))}
               </div>
             </div>
+
+            {/* 📘 CATALOG (DESKTOP) */}
+            <button
+              onClick={openCatalog}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition"
+            >
+              <FileText className="w-4 h-4" />
+              Catalog
+            </button>
           </div>
 
           {/* MOBILE BUTTON */}
@@ -156,6 +140,14 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
+
+            {/* 📘 CATALOG (MOBILE FIXED) */}
+            <button
+              onClick={openCatalog}
+              className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50"
+            >
+              📘 Catalog
+            </button>
 
             <div className="mt-2 px-4 text-xs font-semibold text-gray-400 uppercase">
               Products

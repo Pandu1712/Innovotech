@@ -5,6 +5,7 @@ import { Zap, Shield, Clock, Smartphone } from 'lucide-react';
 import Contact from './Contact';
 import About from './About';
 import CloudinaryVideo from '../components/SampleVideo';
+import ReviewsSection from '../components/ReviewsSection';
 
 export default function Home() {
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function Home() {
           </p>
 
           <CloudinaryVideo
-            videoUrl="https://res.cloudinary.com/dfs1es68i/video/upload/f_auto,q_auto/v1767947387/WhatsApp_Video_2026-01-09_at_12.21.44_ngtsuc.mp4"
+            videoUrl="https://res.cloudinary.com/dfs1es68i/video/upload/v1767951049/Innovotech_Vedio_1_l3z8wz.mp4"
           />
         </div>
       </section>
@@ -85,6 +86,7 @@ export default function Home() {
       <About />
     
       <Contact />
+      <ReviewsSection/>
     </>
   );
 }

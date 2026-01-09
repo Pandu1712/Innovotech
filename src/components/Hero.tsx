@@ -11,21 +11,21 @@ const slides = [
     cta: 'Explore Products'
   },
   {
-    image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://calgaryhomes.ca/uploads/agent-1/smart-home-security.jpg',
     title: 'Smart Security Solutions',
     subtitle: 'Protect What Matters Most',
     description: '24/7 monitoring with advanced AI detection',
     cta: 'View Security'
   },
   {
-    image: 'https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://5.imimg.com/data5/WN/PD/IM/SELLER-55878796/automatic-curtain-system.jpg',
     title: 'Intelligent Automation',
     subtitle: 'Simplify Your Daily Routine',
     description: 'Automated curtains, lights, and climate control',
     cta: 'Learn More'
   },
   {
-    image: 'https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://images.unsplash.com/photo-1715163794558-4fa52e2e4bf9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZW5lcmd5JTIwZWZmaWNpZW50JTIwaG9tZXxlbnwwfHwwfHx8MA%3D%3D',
     title: 'Energy Efficient Living',
     subtitle: 'Save Money, Save Planet',
     description: 'Smart devices that reduce energy consumption',

@@ -231,7 +231,7 @@ ${formData.message}
 
               <div className="rounded-2xl overflow-hidden shadow-xl h-96">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6174337123397!2d-73.98823492346644!3d40.74844097138687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.424514159116!2d79.97947959999999!3d14.4458921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8d004fb28a6d%3A0xb74a97719c10682f!2sInnovotix%20robotics!5e1!3m2!1sen!2sin!4v1767950686158!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

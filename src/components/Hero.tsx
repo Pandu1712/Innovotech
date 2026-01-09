@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948307/Picture18_gujhbh.jpg',
     title: 'Transform Your Home',
     subtitle: 'Experience the Future of Living',
     description: 'Control everything with a touch, voice, or automation',
@@ -18,7 +18,7 @@ const slides = [
     cta: 'View Security'
   },
   {
-    image: 'https://5.imimg.com/data5/WN/PD/IM/SELLER-55878796/automatic-curtain-system.jpg',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture41_uvipni.png',
     title: 'Intelligent Automation',
     subtitle: 'Simplify Your Daily Routine',
     description: 'Automated curtains, lights, and climate control',

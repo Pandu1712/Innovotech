@@ -23,3 +23,12 @@ export interface ContactForm {
   message: string;
   product?: string;
 }
+export interface DemoForm {
+  name: string;
+  mobile: string;
+  email: string;
+  city: string;
+  propertyType: string;
+  stage: string;
+  budget: string;
+}

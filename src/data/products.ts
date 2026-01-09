@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: 'Smart Switch',
     category: 'switches',
     description: 'Step into the future of home automation. Our intelligent ecosystem leverages a powerful trifecta of Wi-Fi, Bluetooth, and Zigbee for unparalleled, always-on connectivity. Your smartphone becomes the command center for your entire home, offering instant access and control 24/7, no matter your location. Elevate your interior with our sleek designs, available in a spectrum of modern colors and bespoke finishes that blend technology and style perfectly.',
-    image: 'https://images.pexels.com/photos/5835359/pexels-photo-5835359.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948320/Picture7_koqhiu.png',
     features: [
       'Touch Control Technology',
       'Voice Assistant Integration',
@@ -25,8 +25,11 @@ doorbell and set custom scenes that suit your mood. From smart switches to senso
 your home is now just a tap away. Step into a new realm of convenience, where your home responds to you
 like never before`,
         images: [
-          'https://images.pexels.com/photos/5835359/pexels-photo-5835359.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/442155/pexels-photo-442155.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948320/Picture7_koqhiu.png',
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948314/Picture8_ikcloe.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948320/Picture5_ornmnq.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948321/Picture2_qr4mef.jpg"
+         
         ],
         specifications: [
           'Control Panel ',
@@ -45,8 +48,10 @@ be wireless or wired. Additionally, customize button labels for a personalized t
 metallic finish, our panels come in six stunning colors to complement your style. Discover the perfect fusion of
 elegance and technology.`,
         images: [
-          'https://images.pexels.com/photos/1472841/pexels-photo-1472841.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture12_j9vsgg.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948314/Picture10_echokq.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948314/Picture8_ikcloe.png"
+
         ],
         specifications: [
           '8.6cm x 8.6cm x 3.9cm',
@@ -67,8 +72,10 @@ Enjoy sophisticated control over your environment instantly, without a single wi
 wall being disturbed. This is seamless home automation as it should be: powerful, invisible, and
 designed to complement your space. `,
         images: [
-          'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/573129/pexels-photo-573129.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture15_cjy4x5.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture13_xggjsw.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture14_dzx4zs.jpg",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture15_cjy4x5.png"
         ],
         specifications: [
           'Input: 90-250V AC',
@@ -96,7 +103,7 @@ our lights adapt to your needs and desires. With sophisticated forms
 and personalized finishes, each piece is designed not just to light a
 room, but to complement your lifestyle and turn everyday moments
 into cherished memories.`,
-    image: 'https://images.pexels.com/photos/1028734/pexels-photo-1028734.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948302/Picture24_bmmvvz.png',
     features: [
       '16 Million Color Options',
       'Adjustable Brightness',
@@ -115,8 +122,11 @@ consistent brightness that effectively illuminates any area. Thanks to efficient
 this high-level performance with minimal energy use. For those who need clarity, visibility, and style, these
 lights are the perfect fit`,
         images: [
-          'https://images.pexels.com/photos/1028734/pexels-photo-1028734.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948302/Picture24_bmmvvz.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948307/Picture18_gujhbh.jpg",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948306/Picture21_nhuo26.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948306/Picture22_kvicze.png"
+
         ],
         specifications: [
           'Dimming: Smooth brightness control (0-100%)',
@@ -135,8 +145,9 @@ dramatic evening look, provide clear task lighting, or cast a soft, warm glow. T
 lighting designed to enhance your home’s best features and elevate your everyday moments.
 `,
         images: [
-          'https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948302/Picture24_bmmvvz.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948301/Picture25_jv5kww.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948298/Picture32_mfi35w.png"
         ],
         specifications: [
           'Dimming: Smooth brightness control (0-100%)',
@@ -154,8 +165,10 @@ offering a truly future-proof solution. As your furniture layout changes, your a
 shift from day to night, simply reposition the lights in seconds. This adaptable system ensures your lighting is
 never obsolete, providing the perfect blend of contemporary style and long-term flexibility`,
         images: [
-          'https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948298/Picture32_mfi35w.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948301/Picture27_ws4hzo.jpg",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948300/Picture28_mgb5vg.png",
+          
         ],
         specifications: [
           'Dimming: Smooth brightness control (0-100%)',
@@ -174,10 +187,12 @@ integrating into coves, under cabinets, or along walls to create an ambient glow
 This energy-efficient solution enhances your smart home by providing a layer of sophisticated, modern
 light that makes every corner feel intentional and beautifully lit`,
         images: [
-          'https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture37_uzbua6.png',
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture36_rup63i.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948294/Picture35_yybzgv.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture37_uzbua6.png"
         ],
-       specifications: [
+        specifications: [
           'Dimming: Smooth brightness control (0-100%)',
           'Adjustable color temperature (2700K - 6500K).',
           'Exceptional color rendering for true-to-life lighting.',
@@ -185,7 +200,7 @@ light that makes every corner feel intentional and beautifully lit`,
           'Color Temperature: 2700K-6500K'
         ]
       },
-        {
+      {
         id: 'panel11',
         name: 'Wall Washer',
         description: `Bathe your living spaces in a smooth, impactful light. Our Wall Washer lights are designed to create a
@@ -195,10 +210,13 @@ modern, sleek design integrates effortlessly into your smart home, giving you a 
 scale and style of any room
 `,
         images: [
-          'https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/3935320/pexels-photo-3935320.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture40_i5q3ya.png',
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture41_uvipni.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture38_khkpx0.png",
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture39_zrlydf.png",
+
         ],
-     specifications: [
+        specifications: [
           'Dimming: Smooth brightness control (0-100%)',
           'Adjustable color temperature (2700K - 6500K).',
           'Exceptional color rendering for true-to-life lighting.',
@@ -228,7 +246,7 @@ complete privacy and create a warm, inviting atmosphere.
 With intuitive control through the Pert App and voice
 commands, managing your home's light and privacy has
 never been more convenient or graceful.`,
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture43_peqfhs.png',
     features: [
       'Whisper Quiet Motor',
       'App & Voice Control',
@@ -254,8 +272,8 @@ powerful, intelligent heart of your smart window
 treatments, available for both American and
 Ripple curtains`,
         images: [
-          'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture43_peqfhs.png',
+          "https://res.cloudinary.com/dfs1es68i/image/upload/v1767948285/Picture42_o5x40b.png",
         ],
         specifications: [
           'Noise Level: <35dB',
@@ -283,8 +301,8 @@ room while improving energy efficiency.
 
 `,
         images: [
-          'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture44_iqwpp7.png',
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture45_yi2zls.png'
         ],
         specifications: [
           'Noise Level: <35dB',
@@ -294,7 +312,7 @@ room while improving energy efficiency.
           'Power: AC adapter or battery'
         ]
       },
-     
+
     ]
   },
   {
@@ -308,7 +326,7 @@ where you are. It’s not just about protectingpossessions—it’saboutcreating
 space that feels safe and comfortable, tailoredtohowyoulive.Frominstant alerts
 to remote control, smart security givesyouthereassurancethatyour home is
 secure and adaptable to yourneeds,makinglifesimpler,saferand worry-free`,
-    image: 'https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948283/Picture46_r7fy3i.jpg',
     features: [
       'HD Video Recording',
       'Motion Detection Alerts',
@@ -331,14 +349,13 @@ spot, keeping you in control and adding that extra peace
 of mind. Stay informed, stay in control and feel safe no
 matter the time or place`,
         images: [
-          'https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/8761562/pexels-photo-8761562.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948283/Picture47_akbksy.png'
         ],
         specifications: [
           'Screen Quality: 1080 Full HD',
           'PIR Motion detection',
           'Two Way Audio',
-          
+
         ]
       },
       {
@@ -353,14 +370,13 @@ no blind spots and every corner of your home is covered.
 Keep your home safe with instant alerts, easy video
 access and continuous monitoring, all at your fingertips.`,
         images: [
-          'https://images.pexels.com/photos/7031605/pexels-photo-7031605.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/6466141/pexels-photo-6466141.jpeg?auto=compress&cs=tinysrgb&w=800'
+          "https://okos.in/cdn/shop/files/1_6b96dc50-8a1f-4ef9-82e1-b10b2b0ce7b7.jpg?v=1735385946"
         ],
         specifications: [
           'View: Near 360 degree view- No blind spot ',
           'Motion detection',
           'Night Vision',
-         
+
         ]
       },
       {
@@ -376,8 +392,7 @@ keys or unexpected guests — your home’s security is now
 always in the palm of your hand.
 `,
         images: [
-          'https://images.pexels.com/photos/8486861/pexels-photo-8486861.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/7031396/pexels-photo-7031396.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://yaleonline.in/cdn/shop/products/3_81f1fa71-fe33-40c6-afa8-fc7243435f3f.jpg?v=1740809042&width=1946'
         ],
         specifications: [
           'Fingerprint, app, password, RFID, key',
@@ -401,7 +416,7 @@ automate tasks, control appliances remotely with your
 phone, and create schedules that fit your rhythm. The result
 is a more convenient, energy-efficient, and secure home that
 gives you back your time and peace of mind`,
-    image: 'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948282/Picture55_w2gz8r.png',
     features: [
       'Universal Compatibility',
       'Easy Integration',
@@ -424,13 +439,12 @@ fits seamlessly into any room, removing the clutter of
 multiple remotes. Smart, easy control is now at your
 fingertips, anytime and anywhere`,
         images: [
-          'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948282/Picture54_nobapq.png'
         ],
         specifications: [
           'Functionality:Controls infrared devices',
           'Connects through Wi-Fi',
-          
+
           'Automation engine',
           ':Typically up to 10 meters.'
         ]
@@ -445,13 +459,12 @@ appliances, lights and electronics right from your
 smartphone or with voice commands, putting
 convenience at your fingertips.`,
         images: [
-          'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948282/Picture55_w2gz8r.png'
         ],
         specifications: [
           'Allows remote control of electrical devices via smar tphone.',
           'Connects through Wi-Fi',
-          
+
           'Usually 16A',
           'Customizable buttons'
         ]
@@ -466,8 +479,7 @@ reliable communication between Sigmesh-enabled devices,
 making automa- tion and control effortless through your
 smartphone or smart home system.`,
         images: [
-          'https://images.pexels.com/photos/6953860/pexels-photo-6953860.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/5835180/pexels-photo-5835180.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948282/Picture56_vtrc3x.png'
         ],
         specifications: [
           ': Central hub that connects various smart devices',
@@ -485,14 +497,13 @@ easily integrates into your system, providing seamless,
 real-time motion detection to enhance everyday conve
 nience.`,
         images: [
-          'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://www.leydenindia.com/image/cache/catalog/pir%20sensor/51QTagK8YRL._AC_SL1209_-550x550.jpg'
         ],
         specifications: [
           ': Detects movement within a specified range to trigger actions.',
           'Connects through Zigbee',
           'Usually around 90° to 180°.',
-          
+
         ]
       },
       {
@@ -504,8 +515,7 @@ doors, windows or desk drawers, it connects seamlessly to
 your smart IoT system, providing re- al-time notifications
 and control for added peace of mind.  `,
         images: [
-          'https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://www.security.org/app/uploads/2020/06/DoorWindow2.jpg'
         ],
         specifications: [
           'Functionality Monitors the opening and closing of doors windows',
@@ -522,8 +532,7 @@ lighting, security systems, and energy-efficient au- tomation
 solutions. Designed for reliability, it performs seamlessly in
 various indoor environments.`,
         images: [
-          'https://images.pexels.com/photos/6953860/pexels-photo-6953860.jpeg?auto=compress&cs=tinysrgb&w=800',
-          'https://images.pexels.com/photos/5835180/pexels-photo-5835180.jpeg?auto=compress&cs=tinysrgb&w=800'
+          'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948281/Picture59_pkhivg.png'
         ],
         specifications: [
           'Functionality Uses microwaves to detect the presence of objects',

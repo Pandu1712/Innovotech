@@ -22,19 +22,19 @@ export default function Gallery() {
   const gallery = [
     {
       id: 1,
-      url: 'https://images.pexels.com/photos/5835359/pexels-photo-5835359.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948321/Picture2_qr4mef.jpg',
       category: 'switches',
       title: 'Touch Panel Switches'
     },
     {
       id: 2,
-      url: 'https://images.pexels.com/photos/1028734/pexels-photo-1028734.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948307/Picture18_gujhbh.jpg',
       category: 'lighting',
       title: 'Smart LED Lighting'
     },
     {
       id: 3,
-      url: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948285/Picture42_o5x40b.png',
       category: 'automation',
       title: 'Automated Curtain System'
     },
@@ -52,13 +52,13 @@ export default function Gallery() {
     },
     {
       id: 6,
-      url: 'https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948282/Picture54_nobapq.png',
       category: 'installations',
       title: 'Smart Bedroom Setup'
     },
     {
       id: 7,
-      url: 'https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948307/Picture23_mmsvdu.png',
       category: 'lighting',
       title: 'RGB Strip Lighting'
     },
@@ -70,37 +70,37 @@ export default function Gallery() {
     },
     {
       id: 9,
-      url: 'https://images.pexels.com/photos/4219861/pexels-photo-4219861.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948293/Picture41_uvipni.png',
       category: 'automation',
       title: 'Smart Hub Control'
     },
     {
       id: 10,
-      url: 'https://images.pexels.com/photos/8761562/pexels-photo-8761562.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948281/Picture59_pkhivg.png',
       category: 'security',
       title: 'Outdoor Security Camera'
     },
     {
       id: 11,
-      url: 'https://images.pexels.com/photos/1472841/pexels-photo-1472841.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948313/Picture12_j9vsgg.png',
       category: 'switches',
       title: 'Multi-Gang Switch Panel'
     },
     {
       id: 12,
-      url: 'https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948302/Picture26_hxj6i5.png',
       category: 'lighting',
       title: 'Panel Light Installation'
     },
     {
       id: 13,
-      url: 'https://images.pexels.com/photos/2343468/pexels-photo-2343468.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948284/Picture43_peqfhs.png',
       category: 'automation',
       title: 'Motorized Curtain Track'
     },
     {
       id: 14,
-      url: 'https://images.pexels.com/photos/7031605/pexels-photo-7031605.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://res.cloudinary.com/dfs1es68i/image/upload/v1767948283/Picture51_sktvos.png',
       category: 'security',
       title: 'Smart Video Doorbell'
     },

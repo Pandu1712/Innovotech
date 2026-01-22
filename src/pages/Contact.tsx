@@ -64,7 +64,7 @@ ${formData.message}
     {
       icon: Mail,
       title: 'Email Us',
-      details: [' contact016innovotech@gmail.com']
+      details: [' innovotechsmart@gmail.com']
     },
     {
       icon: Clock,
@@ -74,7 +74,7 @@ ${formData.message}
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       <div className="relative bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -248,7 +248,7 @@ ${formData.message}
                   Our support team is available 24/7 to assist you with any urgent queries.
                 </p>
                 <a
-                  href="https://wa.me/1234567890?text=Hi,%20I%20need%20immediate%20assistance"
+                  href="https://wa.me/8340952438?text=Hi,%20I%20need%20immediate%20assistance"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105"

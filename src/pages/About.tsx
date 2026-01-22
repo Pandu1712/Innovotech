@@ -33,31 +33,28 @@ export default function About() {
   const stats = [
     { number: '10K+', label: 'Happy Customers' },
     { number: '50+', label: 'Smart Products' },
-    { number: '15+', label: 'Years Experience' },
+    { number: '5+', label: 'Years Experience' },
     { number: '99%', label: 'Satisfaction Rate' }
   ];
 
   const team = [
-    {
-      name: 'John Anderson',
-      role: 'Founder & CEO',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
+
+     {
+      name: 'Ch.Sujithreddy',
+      role: 'Director',
+      image: '678.jpeg'
     },
+   
     {
-      name: 'Sarah Mitchell',
-      role: 'Chief Technology Officer',
-      image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400'
+      name: 'B. Venkatesh',
+      role: 'Cofounder &  head of product design',
+      image: '456.jpeg'
     },
-    {
-      name: 'Michael Chen',
-      role: 'Head of Product Design',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400'
+     {
+      name: 'B. Madhulatha Reddy',
+      role: 'Manager',
+      image: './123.jpeg'
     },
-    {
-      name: 'Emily Rodriguez',
-      role: 'Customer Success Lead',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
   ];
 
   return (
@@ -79,7 +76,7 @@ export default function About() {
         </div>
       </div>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -94,7 +91,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -128,7 +125,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-blue-600 tracking-wide uppercase mb-3">
@@ -153,39 +150,61 @@ export default function About() {
           </div>
         </div>
       </section>
+<section className="py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-sm font-semibold text-blue-600 tracking-wide uppercase mb-3">
+        Our Team
+      </h2>
+      <h3 className="text-4xl font-bold text-gray-900">
+        Meet the Experts
+      </h3>
+    </div>
 
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-blue-600 tracking-wide uppercase mb-3">
-              Our Team
-            </h2>
-            <h3 className="text-4xl font-bold text-gray-900">Meet the Experts</h3>
+    {/* CENTERED CARDS */}
+    <div className="flex flex-wrap justify-center gap-8">
+      {team.map((member, index) => (
+        <div
+          key={index}
+          className="
+            group bg-white rounded-2xl overflow-hidden
+            shadow-lg hover:shadow-2xl
+            transition-all duration-300
+            hover:-translate-y-2
+            w-full sm:w-[300px]
+          "
+        >
+          {/* Image */}
+          <div className="relative h-64 bg-slate-100 flex items-center justify-center">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="
+                max-h-full max-w-full
+                object-contain
+                transition-transform duration-500
+                group-hover:scale-105
+              "
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-              >
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                </div>
-                <div className="p-6 text-center">
-                  <h4 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h4>
-                  <p className="text-blue-600 font-medium">{member.role}</p>
-                </div>
-              </div>
-            ))}
+          {/* Content */}
+          <div className="p-6 text-center">
+            <h4 className="text-xl font-bold text-gray-900 mb-1">
+              {member.name}
+            </h4>
+            <p className="text-blue-600 font-medium">
+              {member.role}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

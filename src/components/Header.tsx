@@ -36,14 +36,14 @@ export default function Header() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-xl"
-          : "bg-white/90 backdrop-blur-lg"
+          ? "bg-slate-200 shadow-md border-b border-slate-300"
+          : "bg-slate-100/95 backdrop-blur-lg border-b border-slate-200"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
 
-          {/* LOGO */}
+          {/* LOGO (UNCHANGED SIZE) */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src="/Logo.jpg"
@@ -58,10 +58,10 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition ${
+                className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   location.pathname === link.path
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                    ? "text-blue-700 bg-blue-100/60 ring-1 ring-blue-200"
+                    : "text-slate-700 hover:text-blue-700 hover:bg-blue-50/60"
                 }`}
               >
                 {link.name}
@@ -74,17 +74,17 @@ export default function Header() {
               onMouseEnter={() => setShowProducts(true)}
               onMouseLeave={() => setShowProducts(false)}
             >
-              <button className="flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+              <button className="flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50/60 transition">
                 Products
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
+                  className={`w-4 h-4 transition-transform duration-300 ${
                     showProducts ? "rotate-180" : ""
                   }`}
                 />
               </button>
 
               <div
-                className={`absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden transition-all duration-200 ${
+                className={`absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-xl border border-slate-200 overflow-hidden transition-all duration-200 ${
                   showProducts
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-2 pointer-events-none"
@@ -94,14 +94,14 @@ export default function Header() {
                   <Link
                     key={product.id}
                     to={`/product/${product.id}`}
-                    className="flex items-center gap-4 px-5 py-4 hover:bg-blue-50"
+                    className="flex items-center gap-4 px-5 py-4 hover:bg-blue-50/60 transition"
                   >
                     <img
                       src={product.image}
                       className="w-8 h-8 rounded"
                       alt={product.name}
                     />
-                    <span className="font-medium text-gray-700">
+                    <span className="font-medium text-slate-700">
                       {product.name}
                     </span>
                   </Link>
@@ -112,7 +112,7 @@ export default function Header() {
             {/* 📘 CATALOG (DESKTOP) */}
             <button
               onClick={openCatalog}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50/60 transition"
             >
               <FileText className="w-4 h-4" />
               Catalog
@@ -121,7 +121,7 @@ export default function Header() {
 
           {/* MOBILE BUTTON */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg hover:bg-blue-50 transition"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}
@@ -135,21 +135,25 @@ export default function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className="block px-4 py-3 rounded-lg hover:bg-gray-50"
+                className={`block px-4 py-3 rounded-lg transition ${
+                  location.pathname === link.path
+                    ? "bg-blue-100/60 text-blue-700 font-medium"
+                    : "hover:bg-blue-50/60 text-slate-700"
+                }`}
               >
                 {link.name}
               </Link>
             ))}
 
-            {/* 📘 CATALOG (MOBILE FIXED) */}
+            {/* 📘 CATALOG (MOBILE) */}
             <button
               onClick={openCatalog}
-              className="w-full text-left px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50"
+              className="w-full text-left px-4 py-3 rounded-lg text-slate-700 hover:bg-blue-50/60 transition"
             >
               📘 Catalog
             </button>
 
-            <div className="mt-2 px-4 text-xs font-semibold text-gray-400 uppercase">
+            <div className="mt-2 px-4 text-xs font-semibold text-slate-400 uppercase">
               Products
             </div>
 
@@ -157,7 +161,7 @@ export default function Header() {
               <Link
                 key={product.id}
                 to={`/product/${product.id}`}
-                className="block px-6 py-3 text-gray-700 hover:bg-gray-50"
+                className="block px-6 py-3 text-slate-700 hover:bg-blue-50/60 transition"
               >
                 {product.name}
               </Link>

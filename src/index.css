@@ -1,9 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* globals.css */
+
+/* ================================
+   Global Theme – Light Blue Body
+================================ */
+@layer base {
+  html,
+  body {
+    @apply bg-sky-200 text-slate-900 antialiased;
+  }
+}
+
+/* ================================
+   Common Inputs
+================================ */
 .input {
   @apply w-full px-4 py-3 border border-gray-300 rounded-xl 
   focus:ring-2 focus:ring-sky-500 focus:border-transparent 
-  outline-none transition-all;
+  outline-none transition-all bg-white;
+}
+
+.input-premium {
+  @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm
+  focus:outline-none focus:ring-2 focus:ring-blue-500 transition;
 }

@@ -117,7 +117,7 @@ export default function Gallery() {
     : gallery.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="relative bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -214,7 +214,7 @@ export default function Gallery() {
         </div>
       )}
 
-      <section className="py-20 bg-white">
+      <section className="py-20 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Want to See These Products in Action?

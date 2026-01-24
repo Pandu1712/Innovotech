@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, FileText } from "lucide-react";
 import { products } from "../data/products";
@@ -7,18 +7,37 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
+
+  const productRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
+  /* Scroll Effect */
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  /* Close menus on route change */
   useEffect(() => {
     setIsOpen(false);
     setShowProducts(false);
   }, [location]);
+
+  /* Close product dropdown when clicking outside */
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        productRef.current &&
+        !productRef.current.contains(event.target as Node)
+      ) {
+        setShowProducts(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -42,8 +61,7 @@ export default function Header() {
     >
       <nav className="max-w-7xl mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-
-          {/* LOGO (UNCHANGED SIZE) */}
+          {/* LOGO */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src="/Logo.jpg"
@@ -68,13 +86,12 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* PRODUCTS DROPDOWN */}
-            <div
-              className="relative"
-              onMouseEnter={() => setShowProducts(true)}
-              onMouseLeave={() => setShowProducts(false)}
-            >
-              <button className="flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50/60 transition">
+            {/* PRODUCTS DROPDOWN (FIXED) */}
+            <div className="relative" ref={productRef}>
+              <button
+                onClick={() => setShowProducts(!showProducts)}
+                className="flex items-center gap-1 px-4 py-2 rounded-lg font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50/60 transition"
+              >
                 Products
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-300 ${
@@ -83,33 +100,29 @@ export default function Header() {
                 />
               </button>
 
-              <div
-                className={`absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-xl border border-slate-200 overflow-hidden transition-all duration-200 ${
-                  showProducts
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-2 pointer-events-none"
-                }`}
-              >
-                {products.map(product => (
-                  <Link
-                    key={product.id}
-                    to={`/product/${product.id}`}
-                    className="flex items-center gap-4 px-5 py-4 hover:bg-blue-50/60 transition"
-                  >
-                    <img
-                      src={product.image}
-                      className="w-8 h-8 rounded"
-                      alt={product.name}
-                    />
-                    <span className="font-medium text-slate-700">
-                      {product.name}
-                    </span>
-                  </Link>
-                ))}
-              </div>
+              {showProducts && (
+                <div className="absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-xl border border-slate-200 overflow-hidden">
+                  {products.map(product => (
+                    <Link
+                      key={product.id}
+                      to={`/product/${product.id}`}
+                      className="flex items-center gap-4 px-5 py-4 hover:bg-blue-50/60 transition"
+                    >
+                      <img
+                        src={product.image}
+                        className="w-8 h-8 rounded"
+                        alt={product.name}
+                      />
+                      <span className="font-medium text-slate-700">
+                        {product.name}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* 📘 CATALOG (DESKTOP) */}
+            {/* CATALOG */}
             <button
               onClick={openCatalog}
               className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-slate-700 hover:text-blue-700 hover:bg-blue-50/60 transition"
@@ -145,7 +158,6 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* 📘 CATALOG (MOBILE) */}
             <button
               onClick={openCatalog}
               className="w-full text-left px-4 py-3 rounded-lg text-slate-700 hover:bg-blue-50/60 transition"

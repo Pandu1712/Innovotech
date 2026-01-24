@@ -17,7 +17,16 @@ export default function App() {
   const [open, setOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
-  // ✅ Button show / hide every 2 seconds
+  // ✅ Open popup automatically only once on page load
+  useEffect(() => {
+    const alreadyClosed = sessionStorage.getItem('demoPopupClosed');
+
+    if (!alreadyClosed) {
+      setOpen(true);
+    }
+  }, []);
+
+  // ✅ Blinking button every 1 second (unchanged)
   useEffect(() => {
     const interval = setInterval(() => {
       setShowButton(prev => !prev);
@@ -26,8 +35,10 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
+  // ✅ When user closes popup, remember it
   const handleClose = () => {
     setOpen(false);
+    sessionStorage.setItem('demoPopupClosed', 'true');
   };
 
   return (

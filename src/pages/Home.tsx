@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Hero from '../components/Hero';
 import ProductsGrid from '../components/ProductsGrid';
 import { Zap, Shield, Clock, Smartphone } from 'lucide-react';
@@ -8,9 +7,6 @@ import CloudinaryVideo from '../components/SampleVideo';
 import ReviewsSection from '../components/ReviewsSection';
 
 export default function Home() {
-  useEffect(() => {
-    document.title = 'SmartHome - Transform Your Living Space with Smart Technology';
-  }, []);
 
   const features = [
     {

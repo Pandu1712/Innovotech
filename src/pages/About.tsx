@@ -3,7 +3,6 @@ import { Target, Users, Award, TrendingUp, Clock, Heart } from 'lucide-react';
 
 export default function About() {
   useEffect(() => {
-    document.title = 'About Us - SmartHome';
     window.scrollTo(0, 0);
   }, []);
 

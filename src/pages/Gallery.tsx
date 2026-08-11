@@ -6,7 +6,6 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   useEffect(() => {
-    document.title = 'Gallery - SmartHome';
     window.scrollTo(0, 0);
   }, []);
 

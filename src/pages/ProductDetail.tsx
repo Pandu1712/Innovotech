@@ -11,7 +11,6 @@ export default function ProductDetail() {
 
   useEffect(() => {
     if (product) {
-      document.title = `${product.name} - SmartHome`;
       window.scrollTo(0, 0);
     }
   }, [product]);

@@ -12,7 +12,6 @@ export default function Contact() {
   });
 
   useEffect(() => {
-    document.title = 'Contact Us - SmartHome';
     window.scrollTo(0, 0);
   }, []);
 
